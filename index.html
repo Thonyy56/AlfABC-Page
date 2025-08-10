@@ -1,29 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALfABC - Home</title>
-    <link rel="stylesheet" href="style.css">
+<title>AlfABC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .w3-red {background-color: #203c56 !important;}
+  .fa-anchor,.fa-coffee {font-size:200px}
+
+  /* Rolagem suave */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>ALfABC</h1>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="download.html">Download</a>
-            <a href="https://github.com/Thonyy56/AlfABC" target="_blank" class="github-icon">
-                <img src="assets/github-icon.png" alt="GitHub">
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <img src="hero-image.png" alt="Ilustração do ALfABC">
-            <h2>ALFABC</h2>
-            <p>AlfABC é um aplicativo Open-Source desenvolvido em Python, projetado para auxiliar pessoas analfabetas em atividades cotidianas. Ele permite, por exemplo, interpretar imagens e transformar textos em áudio, proporcionando mais autonomia e inclusão no dia a dia.</p>
-            <a href="download.html" class="btn">Baixar Agora</a>
-        </section>
-    </main>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#inicio" class="w3-bar-item w3-button w3-padding-large w3-white">Início</a>
+    <a href="#sobre" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sobre</a>
+    <a href="#download" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+    <a href="#repositorio" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Repositório</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#sobre" class="w3-bar-item w3-button w3-padding-large">Sobre</a>
+    <a href="#download" class="w3-bar-item w3-button w3-padding-large">Download</a>
+    <a href="#repositorio" class="w3-bar-item w3-button w3-padding-large">Repositório</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="inicio" class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">AlfABC</h1>
+  <p class="w3-xlarge">Um Aplicativo para auxiliar pessoas com dificuldade em leitura</p>
+  <a href="#download" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Download</a>
+</header>
+
+<!-- First Grid -->
+<div id="sobre" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Sobre</h1>
+      <h5 class="w3-padding-32">Um Aplicativo com funções boas para auxiliar pessoas com dificuldade em leitura..</h5>
+
+      <p class="w3-text-grey">
+        O Aplicativo AlfABC, tem como principal objetivo ser um hub de soluções acessíveis que visam combater o problema do analfabetismo por meio da tecnologia. Equipado com funcionalidades como Leitor de textos, Leitor de textos em imagens, etc... O Aplicativo pode ajudar diversas pessoas, além de possuir uma interface que não só é amigável, como é prática, simples e com funcionalidades como TalkBack integrado para melhor experiência do usuário. O projeto se encontra atualmente encerrado, para que o desenvolvedor focasse no sucessor do AlfABC, o 
+        <a href="https://thonyy56.github.io/SunoApp/" target="_blank">Suno</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div id="download" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Download</h1>
+      <h5 class="w3-padding-32">O Download é fácil, seguro e gratuito.</h5>
+
+      <p class="w3-text-grey">O Download do Aplicativo, tal qual seu código Fonte, se encontram hospedados na plataforma digital GitHub. Você pode baixar a última versão clicando abaixo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div id="repositorio" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Repositório</h1>
+      <h5 class="w3-padding-32">Um Repositório organizado e simples.</h5>
+
+      <p class="w3-text-grey">Como um aplicativo de Código Aberto "Source Code", o repositório do AlfABC se encontra disponível no GitHub e pode ser acessado por esse link:</p>
+      <p><a href="https://github.com/Thonyy56/AlfABC" target="_blank">https://github.com/Thonyy56/AlfABC</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Contato -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Email para Contato:</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <p>Feito por <a href="https://github.com/Thonyy56" target="_blank">Thony</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
